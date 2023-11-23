@@ -1,0 +1,19 @@
+.list{
+    width: 800px;
+    margin-top: 2rem;
+    
+  }
+
+.tasks{
+  background-color: rgb(213, 245, 209);
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  width: 800px;
+  margin-top: 2rem;
+  padding: 20px;
+  border-radius: 20px;
+  
+}
+
+

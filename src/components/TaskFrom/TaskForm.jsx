@@ -42,8 +42,8 @@ const TaskForm = ({addTask}) => {
                             <textarea placeholder='Escribe una nueva tarea' id='description' name='description'></textarea>
                         </div>
                         <div className='buttons'>
-                            <button type='submit'>Agregar</button>
-                            <button onClick={handleCloseNewTaskModal}>Cancelar</button>
+                            <button className='accept' type='submit'>Agregar</button>
+                            <button className='cancel' onClick={handleCloseNewTaskModal}>Cancelar</button>
                         </div>
                     </form>
                     

@@ -1,30 +1,138 @@
-#root{
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html,
+body {
+    margin: 0; background-color: rgba(46, 64, 83);
+}
+
+
+#root {
     max-width: 1280px;
-    height: auto;
-    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    margin: 0px;
     padding: 2rem;
     text-align: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: rgb(210, 211, 248);
-    
+
+
 }
 
-.filter{
-    margin-left: 10%;
-    
+.filter {
+    margin: 1rem;
+
 }
 
-.filter input{
-    background-color: rgb(187, 255, 232);
+.filter input {
+    background-color: rgb(223, 248, 240);
     border-radius: 5px;
-    width: 20vw;
-    height: 5vh ;
+    height: 5vh;
     text-align: center;
     font-size: 18px;
+    border: 3px solid #01cceb;
 }
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px)  {
+
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    #root {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .filter input {
+        width: 50vw;
+        height: 8vh;
+    }
+
+    .tasks {
+        width: 30vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .items h3{
+        font-size: 16px !important;
+    }
+
+    .items p{
+        font-size: 14px !important;
+    }
+
+    .items span {
+        position: relative;
+        left: 0%;
+        margin-top: 1rem;
+        font-size: 12px !important;
+    }
+
+    .items button{
+        position: relative;
+        left: 0%;
+        margin-top: 1rem;
+        width: 10vh;
+        
+        
+    }
+
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+
+    html,
+    body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .filter input {
+        width: 50vw;
+        height: 5vh;
+    }
+
+    .items {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .items span {
+        position: relative;
+        left: 0%;
+        margin-top: 3rem;
+    }
+
+    .items button{
+        position: relative;
+        left: 0%;
+        margin-top: 3rem;
+        width: 10vh;
+        
+    }
+}
+
 
 
 

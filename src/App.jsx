@@ -21,7 +21,6 @@ function App() {
 
 
   useEffect(()=>{
-    console.log('detecte un cambio')
     setCurrentTask(tasks.filter(task => 
       task.title.toLowerCase().includes(searchString.toLowerCase()) 
       ||
@@ -34,7 +33,6 @@ function App() {
   }
  
 
-  console.log(tasks)
    return (
     <>
       <form className='filter' >

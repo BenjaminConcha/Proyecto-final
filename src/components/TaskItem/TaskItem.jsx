@@ -8,7 +8,6 @@ const TaskItem = ({task, deleteTask}) => {
             <p>{task.description}</p>
             <span>{task.createdAt}</span>
             <button className='delete' onClick={() => deleteTask(task.id)}>Finalizar</button>
-            <hr />
         </div>
     )
 }
